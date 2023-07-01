@@ -1,0 +1,18 @@
+<p>practice-assignment works!</p>
+
+<div class="contrainer">
+    <div class="row">
+        <div class="col-xs-12">
+            <button type="button" class="btn btn-primary" (click)="onToggleDetails()"> Display Details</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <p *ngIf="showContent">Secret Password = tuna</p>
+            <!--Access For loop and index of array-->
+            <div *ngFor="let item of log; let i = index"
+            [ngStyle]="{backgroundColor : i >=5 ? 'blue' : 'transparent' }"
+            [ngClass] = "{'white-text' : i >= 5}">{{item}}</div>
+        </div>
+    </div>
+</div>
