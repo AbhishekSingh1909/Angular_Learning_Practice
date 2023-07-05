@@ -2,7 +2,7 @@ import {Component, Input} from '@angular/core'
 @Component({
     selector : 'app-odd',
     templateUrl : './odd.component.html',
-    styles : ['span { color : "red"}']
+    styles : ['span { color : blue}']
 })
 
 export class OddComponent
